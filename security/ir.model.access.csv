@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+jt_gs1_gtin.access_jt_import_gpc,access_jt_import_gpc,jt_gs1_gtin.model_jt_import_gpc,base.group_user,1,0,0,0
+jt_gs1_gtin.access_jt_gs1_segment,access_jt_gs1_segment,jt_gs1_gtin.model_jt_gs1_segment,base.group_user,1,0,0,0
+jt_gs1_gtin.access_jt_gs1_family,access_jt_gs1_family,jt_gs1_gtin.model_jt_gs1_family,base.group_user,1,0,0,0
+jt_gs1_gtin.access_jt_gs1_class,access_jt_gs1_class,jt_gs1_gtin.model_jt_gs1_class,base.group_user,1,0,0,0
+jt_gs1_gtin.access_jt_gs1_brick,access_jt_gs1_brick,jt_gs1_gtin.model_jt_gs1_brick,base.group_user,1,0,0,0
+jt_gs1_gtin.access_jt_import_gpc_manager,access_jt_import_gpc_manager,jt_gs1_gtin.model_jt_import_gpc,jt_gs1_gtin.group_gs1_manager,1,1,1,1
+jt_gs1_gtin.access_jt_gs1_segment_manager,access_jt_gs1_segment_manager,jt_gs1_gtin.model_jt_gs1_segment,jt_gs1_gtin.group_gs1_manager,1,1,1,1
+jt_gs1_gtin.access_jt_gs1_family_manager,access_jt_gs1_family_manager,jt_gs1_gtin.model_jt_gs1_family,jt_gs1_gtin.group_gs1_manager,1,1,1,1
+jt_gs1_gtin.access_jt_gs1_class_manager,access_jt_gs1_class_manager,jt_gs1_gtin.model_jt_gs1_class,jt_gs1_gtin.group_gs1_manager,1,1,1,1
+jt_gs1_gtin.access_jt_gs1_brick_manager,access_jt_gs1_brick_manager,jt_gs1_gtin.model_jt_gs1_brick,jt_gs1_gtin.group_gs1_manager,1,1,1,1

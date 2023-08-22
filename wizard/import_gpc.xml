@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="import_gpc_view_form" model="ir.ui.view">
+        <field name="name">jt.import.gpc.view.form</field>
+        <field name="model">jt.import.gpc</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group name="general">
+                        <field name="file" />
+                    </group>
+                    <footer>
+                        <button name="action_import" string="Import/Update" type="object" class="btn-primary" />
+                        <button special="cancel" string="Close" class="oe_link" />
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_gpc_import" model="ir.actions.act_window">
+        <field name="name">Import GS1 global categories</field>
+        <field name="res_model">jt.import.gpc</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem
+        id="menu_jt_gs1_gpc_import"
+        name="Import GS1 Global Categories"
+        parent="menu_gs1_config"
+        action="action_gpc_import"
+        sequence="1"
+        groups="group_gs1_manager"
+    />
+
+
+</odoo>
