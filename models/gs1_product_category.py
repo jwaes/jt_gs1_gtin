@@ -20,7 +20,7 @@ class GPCSegment(models.Model):
 
     code = fields.Char(
         string='Code',
-        indexed=True,
+        index=True,
         required=True,
     )
 
