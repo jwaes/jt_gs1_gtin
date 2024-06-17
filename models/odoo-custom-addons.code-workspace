@@ -11,6 +11,136 @@
         },
         {
             "path": "../../../../../home/jaco/odoo-eauzon"
+        },
+        {
+            "path": "../../jt_eauzon_custom"
+        },
+        {
+            "path": "../../jt_product_attribute_css"
+        },
+        {
+            "path": "../../jt_mrp"
+        },
+        {
+            "path": "../../jt_mrp_otf"
+        },
+        {
+            "path": "../../jt_invoice_cashdiscount"
+        },
+        {
+            "path": "../../jt_mrp_housing"
+        },
+        {
+            "path": "../../jt_stock_subcontracting"
+        },
+        {
+            "path": "../../jt_product_vendorcodes"
+        },
+        {
+            "path": "../../jt_stock_portal"
+        },
+        {
+            "path": "../../jt_dropship"
+        },
+        {
+            "path": "../../jt_mrp_portal"
+        },
+        {
+            "path": "../../jt_now_custom"
+        },
+        {
+            "path": "../../../../../home/jaco/now-v1"
+        },
+        {
+            "path": "../../../odoo-enterprise-addons"
+        },
+        {
+            "path": "../../jt_stock_vendorcodes"
+        },
+        {
+            "path": "../../jt_lead_task"
+        },
+        {
+            "path": "../../jt_product_properties"
+        },
+        {
+            "path": "../../../odoo"
+        },
+        {
+            "path": "../../jt_pricelist_publisher"
+        },
+        {
+            "path": "../../jt_product_attributeset"
+        },
+        {
+            "path": "../../jt_mrp_bom_templates"
+        },
+        {
+            "path": "../../jt_sale_order_line_codecolumn"
+        },
+        {
+            "path": "../../jt_contacts"
+        },
+        {
+            "path": "../../jt_project_assign"
+        },
+        {
+            "path": "../../jt_now_shipping"
+        },
+        {
+            "path": "../../jt_webeditor_extras"
+        },
+        {
+            "path": "../../jt_image_tools"
+        },
+        {
+            "path": "../../jt_account_sepa"
+        },
+        {
+            "path": "../../jt_product_properties_website"
+        },
+        {
+            "path": "../../jt_sales_invoice"
+        },
+        {
+            "path": "../../jt_product_ncscolor"
+        },
+        {
+            "path": "../../jt_gtag"
+        },
+        {
+            "path": "../../jt_documents_product"
+        },
+        {
+            "path": "../../jt_website_sale_vatprices"
+        },
+        {
+            "path": "../../jt_website_product_seo"
+        },
+        {
+            "path": "../../jt_purchase"
+        },
+        {
+            "path": "../../theme_now"
+        },
+        {
+            "path": "../../jt_home_assistant"
+        },
+        {
+            "path": "../../jt_documents_website"
+        },
+        {
+            "path": "../../../../../home/jaco/odoo-17.0+e.20240617"
+        },
+        {
+            "path": "../../jt_account_external"
+        },
+        {
+            "path": "../../jt_account_nobanner"
         }
-    ]
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": []
+    }
 }
