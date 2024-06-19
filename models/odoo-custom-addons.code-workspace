@@ -137,6 +137,13 @@
         },
         {
             "path": "../../jt_account_nobanner"
+        },
+        {
+            "path": "../../jt_hr_workday"
+        },
+        {
+            "name": "upgrade-util",
+            "path": "../../../../../home/jaco/upgrade-util"
         }
     ],
     "launch": {
