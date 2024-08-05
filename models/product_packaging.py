@@ -16,27 +16,28 @@ class ProductPackaging(models.Model):
         'unique(barcode)',
         'The product_packaging barcode must be unique')]
 
-    @api.model
-    def create(self, vals):
-        # _logger.info(vals)
-        packagings = self.env['product.packaging'].search([('product_id.id' ,'=', vals['product_id'])])
-        # _logger.info(packagings)
-        highest_seq = 1
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            # _logger.info(vals)
+            packagings = self.env['product.packaging'].search([('product_id.id' ,'=', vals['product_id'])])
+            # _logger.info(packagings)
+            highest_seq = 1
 
-        if len(packagings) > 0:
-            for pack in packagings:
-                if pack.product_packaging_sequence > highest_seq:
-                    highest_seq = pack.product_packaging_sequence            
-            vals['product_packaging_sequence'] = highest_seq + 1
-        else :
-             vals['product_packaging_sequence'] = 1
-        parent = self.env['product.product'].browse(vals['product_id'])
-        if parent.barcode:
-            bc = self._get_barcode(parent.barcode, vals['product_packaging_sequence'])
-            if bc:
-                vals['barcode'] = bc
+            if len(packagings) > 0:
+                for pack in packagings:
+                    if pack.product_packaging_sequence > highest_seq:
+                        highest_seq = pack.product_packaging_sequence            
+                vals['product_packaging_sequence'] = highest_seq + 1
+            else :
+                vals['product_packaging_sequence'] = 1
+            parent = self.env['product.product'].browse(vals['product_id'])
+            if parent.barcode:
+                bc = self._get_barcode(parent.barcode, vals['product_packaging_sequence'])
+                if bc:
+                    vals['barcode'] = bc
 
-        res = super(ProductPackaging, self).create(vals)
+        res = super(ProductPackaging, self).create(vals_list)
         return res
 
     @api.depends('product_id', 'product_id.barcode', 'product_packaging_sequence')
