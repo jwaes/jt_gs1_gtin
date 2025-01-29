@@ -33,7 +33,7 @@ class GPCSegment(models.Model):
         for segment in self:
             recs = self.search_count([('code', '=', segment.code)])
             if recs > 1:
-                raise ValidationError(_(
+                raise ValidationError(self.env._(
                     'The code of the segment must be unique.'))
 
 class GPCFamily(models.Model):
@@ -68,7 +68,7 @@ class GPCFamily(models.Model):
         for family in self:
             recs = self.search_count([('code', '=', family.code)])
             if recs > 1:
-                raise ValidationError(_(
+                raise ValidationError(self.env._(
                     'The code of the family must be unique.'))
 
 class GPCClass(models.Model):
@@ -103,7 +103,7 @@ class GPCClass(models.Model):
         for klas in self:
             recs = self.search_count([('code', '=', klas.code)])
             if recs > 1:
-                raise ValidationError(_(
+                raise ValidationError(self.env._(
                     'The code of the class must be unique.'))
 
 class GPCBrick(models.Model):
@@ -143,5 +143,5 @@ class GPCBrick(models.Model):
         for brick in self:
             recs = self.search_count([('code', '=', brick.code)])
             if recs > 1:
-                raise ValidationError(_(
+                raise ValidationError(self.env._(
                     'The code of the brick must be unique.'))                    
